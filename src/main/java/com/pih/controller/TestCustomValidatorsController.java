@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/validate")
 public class TestCustomValidatorsController {
 
-    @GetMapping("/json-body-validation")
+    @GetMapping("/custom-field-validation")
     public String testJsonBody(@Valid @RequestBody Employee employee){
             //, BindingResult result, Model m) {
 //            if(result.hasErrors()) {
